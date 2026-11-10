@@ -1,0 +1,8 @@
+{
+  "release": {
+    "version": "1.0.19",
+    "url": "https://github.com/YhasOS/squadvoxis-web/releases/download/v1.0.19/SquadVoxis-1.0.19-Setup.exe",
+    "sha256": "f5d10f14a52d5b75af9a16c6b4f476e559919e9cb37bd3ead32ca132eb8bc66c"
+  },
+  "signature": "IcsHI3ViYLUI6fP94_vSe9odua5QLJHdHjm3O86wL9HJC5n30iWxP0gJx0PxOluOdPBO07zrrtZzJj_dz8oHDw"
+}
