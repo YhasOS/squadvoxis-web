@@ -1,0 +1,94 @@
+/* SquadVoxis responsive fixes — additive stylesheet; load after styles.css.
+   Scope: presentation only. Does not affect downloads, pricing, payments or JavaScript. */
+html { text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+img, video, svg { max-width: 100%; }
+img, video { height: auto; }
+.container, .hero > *, .preview-section > *, .download-panel > *, .final-inner > * { min-width: 0; }
+h1, h2, h3, p, .plan-item { overflow-wrap: break-word; }
+@media (max-width: 1080px) {
+  .nav-shell { gap: 16px; }
+  .nav-actions { margin-left: auto; }
+  .hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+@media (max-width: 770px) {
+  .site-header { -webkit-backdrop-filter: blur(14px); }
+  .nav-shell { position: relative; gap: 12px; }
+  .nav-actions { gap: 6px; }
+  .lang-toggle { padding: 9px 10px; }
+  .menu-toggle { flex: none; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
+  .nav-links { max-height: calc(100dvh - 69px); overflow-y: auto; }
+  .nav-links a { display: block; padding: 9px 0; font-size: 15px; }
+  .hero { grid-template-columns: minmax(0,1fr); }
+  .hero-copy, .hero-lead, .section-title { max-width: 100%; }
+  h1 { font-size: clamp(2.6rem, 9vw, 4.2rem); letter-spacing: -.045em; line-height: 1.07; }
+  .hero-lead { line-height: 1.6; }
+  .section h2 { font-size: clamp(2rem, 6.8vw, 3rem); letter-spacing: -.04em; }
+  .preview-section, .download-panel { grid-template-columns: minmax(0,1fr); }
+  .preview-frame, .device-window { transform: none; }
+  .download-panel { gap: 25px; }
+  .price-grid .plan-amount strong { font-size: clamp(3rem, 12vw, 4rem); }
+  .price-grid .price { font-size: clamp(1.7rem, 7vw, 2.125rem); }
+  .final-inner { display: block; }
+  .final-inner > * + * { margin-top: 16px; }
+  .footer { padding-block: 48px 32px; }
+}
+@media (max-width: 550px) {
+  .container { width: calc(100% - 32px); }
+  .site-header .brand { font-size: clamp(16px, 4.6vw, 19px); letter-spacing: -.035em; }
+  .brand-glyph, .brand-glyph svg { width: 27px; height: 27px; }
+  .hero { padding-block: 40px 18px; gap: 26px; }
+  h1 { font-size: clamp(2.25rem, 10vw, 3.15rem); margin: 18px 0 18px; }
+  .hero-buttons { display: grid; grid-template-columns: minmax(0,1fr); gap: 10px; }
+  .hero-buttons .button, .download-action { width: 100%; max-width: 100%; min-height: 48px; text-align: center; }
+  .hero-footnote, .discord-banner { flex-wrap: wrap; line-height: 1.6; }
+  .network-panel { min-height: 0; padding: 16px 12px; border-radius: 16px; }
+  .net-command { width: min(100%, 290px); gap: 10px; padding: 12px; }
+  .net-command strong { font-size: clamp(10px, 3vw, 13px); overflow-wrap: anywhere; }
+  .net-command small { font-size: 9px; letter-spacing: .04em; }
+  .avatar-command { width: 38px; height: 38px; flex: none; }
+  .avatar-command svg { width: 25px; }
+  .signal-icon { font-size: 20px; }
+  .squads { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+  .squad-node { min-height: 79px; padding: 10px 6px; }
+  .squad-node strong { font-size: 10px; }
+  .squad-node small { font-size: 9px; }
+  .network-spine { display: none; }
+  .network-legend { margin: 18px 0; }
+  .panel-top, .panel-bottom { gap: 10px; }
+  .mono { font-size: 9px; letter-spacing: .035em; }
+  .value-strip { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; padding: 14px 12px; }
+  .value-strip > div { justify-content: flex-start; font-size: 11px; min-width: 0; }
+  .section { padding-top: 68px; }
+  .section h2 { font-size: clamp(1.85rem, 8vw, 2.4rem); }
+  .how-grid, .detail-grid, .price-grid { grid-template-columns: minmax(0,1fr); }
+  .feature-card, .detail-grid article, .price-grid .price-card { padding: 22px 20px; }
+  .price-grid { width: 100%; max-width: none; }
+  .price-grid .plan-amount strong { font-size: clamp(2.8rem, 13vw, 4rem); }
+  .price-grid .price { font-size: clamp(1.75rem, 8vw, 2.15rem); }
+  .download-panel { padding: 24px 18px; }
+  .download-panel h2 { font-size: clamp(2rem, 8vw, 2.8rem); }
+  .download-specs span { white-space: normal; }
+  .device-content { padding: 20px 15px; }
+  .device-head { font-size: 11px; }
+  .device-commander, .device-squad { font-size: 11px; padding: 13px 10px; }
+  .device-commander span, .device-squad span { font-size: 9px; }
+  .faq-grid summary { min-height: 44px; gap: 12px; font-size: 15px; }
+  .faq-grid p { margin-right: 0; }
+  .final-call { margin-top: 70px; }
+  .final-inner { padding: 24px 20px; }
+  .final-inner h2 { font-size: clamp(1.8rem, 8vw, 2.3rem); }
+}
+@media (max-width: 360px) {
+  .container { width: calc(100% - 24px); }
+  .brand { gap: 5px; }
+  .nav-shell { gap: 4px; }
+  .lang-toggle { padding: 8px 6px; font-size: 11px; }
+  h1 { font-size: clamp(2.1rem, 9.5vw, 2.5rem); }
+  .value-strip { grid-template-columns: minmax(0,1fr); }
+  .network-panel { padding-inline: 9px; }
+  .net-command { margin-top: 20px; }
+  .download-panel { padding: 20px 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button:hover, .plan-action:hover, .feature-card:hover { transform: none; }
+}
