@@ -1,0 +1,22 @@
+SQUADVOXIS WEB — IMÁGENES EN 4 IDIOMAS
+
+Este paquete contiene el index.html editado a partir del código HTML que compartiste
+("Texto pegado(8).txt") y los 9 archivos WebP traducidos de las tarjetas.
+
+IMPORTANTE: comprueba que el index.html del repositorio sigue siendo la misma versión
+antes de sustituirlo. Si ha cambiado, NO sobreescribas los cambios recientes:
+solo añade al final del <body> esta línea:
+<script src="imagenes-idiomas.js" defer></script>
+y sube imagenes-idiomas.js + la carpeta marketing/i18n.
+
+PARA PUBLICAR EN GitHub YhasOS/squadvoxis-web (rama main):
+1. Haz copia del index.html actual.
+2. Sube los nueve WebP en marketing/i18n sin borrar las imágenes actuales.
+3. Sube imagenes-idiomas.js a la raíz.
+4. Integra la etiqueta script justo antes de </body>; si no hubo cambios en
+   index.html desde el texto enviado, puedes sustituirlo por el adjunto.
+5. Verifica la web en ES/EN/DE/FR y móvil: las 3 imágenes deben cambiar sin recargar.
+
+No altera enlaces de descarga, precios, licencias ni scripts de traducción existentes.
+Se conservan las 3 imágenes españolas publicadas y se agregan 9 imágenes nuevas.
+No está publicado automáticamente: se requiere acceso de escritura al repositorio.
